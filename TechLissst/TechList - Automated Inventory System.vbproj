@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8E05C93-8165-4B7B-A9D6-9E9CF0F00B3B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TechLissst.My.MyApplication</StartupObject>
+    <RootNamespace>TechLissst</RootNamespace>
+    <AssemblyName>TechList - Automated Inventory System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\Denise\Users\Den\Desktop\Techlist - AIS Installer\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\Denise\Users\Den\Desktop\Techlist - AIS Installer\</InstallUrl>
+    <UpdateUrl>\\Denise\Users\Den\Desktop\Techlist - Automated Inventory System\</UpdateUrl>
+    <ApplicationRevision>10</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TechList - Automated Inventory System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TechList - Automated Inventory System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>51BC869D584E71C0BC875A913F0E8B5B1DE6802B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TechList - Automated Inventory System_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Desktop\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACCOUNTADD.Designer.vb">
+      <DependentUpon>ACCOUNTADD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNTADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCOUNTUPDATE.Designer.vb">
+      <DependentUpon>ACCOUNTUPDATE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNTUPDATE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINPROJ.Designer.vb">
+      <DependentUpon>ADMINPROJ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINPROJ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINPROJADD.Designer.vb">
+      <DependentUpon>ADMINPROJADD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINPROJADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINPROJBORROW.Designer.vb">
+      <DependentUpon>ADMINPROJBORROW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINPROJBORROW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINPROJOUT.Designer.vb">
+      <DependentUpon>ADMINPROJOUT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINPROJOUT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHANGEPASSWORD.Designer.vb">
+      <DependentUpon>CHANGEPASSWORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CHANGEPASSWORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUESSHOME.Designer.vb">
+      <DependentUpon>GUESSHOME.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUESSHOME.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUESSINVENTORY.Designer.vb">
+      <DependentUpon>GUESSINVENTORY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUESSINVENTORY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUESSMAMA.Designer.vb">
+      <DependentUpon>GUESSMAMA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUESSMAMA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUESSPARTS.Designer.vb">
+      <DependentUpon>GUESSPARTS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUESSPARTS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUESSPROJ.Designer.vb">
+      <DependentUpon>GUESSPROJ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUESSPROJ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUESSSTOCK.Designer.vb">
+      <DependentUpon>GUESSSTOCK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUESSSTOCK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HELP.Designer.vb">
+      <DependentUpon>HELP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HELP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HELPSHOW.Designer.vb">
+      <DependentUpon>HELPSHOW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HELPSHOW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HOME.Designer.vb">
+      <DependentUpon>HOME.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HOME.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HOMEUSER.Designer.vb">
+      <DependentUpon>HOMEUSER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HOMEUSER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INVENTORY.Designer.vb">
+      <DependentUpon>INVENTORY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INVENTORY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INVENTORYADD.Designer.vb">
+      <DependentUpon>INVENTORYADD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INVENTORYADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INVENTORYUPDATE.Designer.vb">
+      <DependentUpon>INVENTORYUPDATE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INVENTORYUPDATE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGADD.Designer.vb">
+      <DependentUpon>LOGADD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LOGADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGHISTORY.Designer.vb">
+      <DependentUpon>LOGHISTORY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LOGHISTORY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.vb">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGUPDATE.Designer.vb">
+      <DependentUpon>LOGUPDATE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LOGUPDATE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAJORREPORT.Designer.vb">
+      <DependentUpon>MAJORREPORT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MAJORREPORT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAJORREPORTSTUB.Designer.vb">
+      <DependentUpon>MAJORREPORTSTUB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MAJORREPORTSTUB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MANAGEACCOUNT.Designer.vb">
+      <DependentUpon>MANAGEACCOUNT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MANAGEACCOUNT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MINORREPORTSTUB.Designer.vb">
+      <DependentUpon>MINORREPORTSTUB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MINORREPORTSTUB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleTechListBackup.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MySQLDatabaseCommand.vb" />
+    <Compile Include="PARTS.Designer.vb">
+      <DependentUpon>PARTS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PARTS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PARTSADD.Designer.vb">
+      <DependentUpon>PARTSADD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PARTSADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PARTSUPDATE.Designer.vb">
+      <DependentUpon>PARTSUPDATE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PARTSUPDATE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PROJECTORLOG.Designer.vb">
+      <DependentUpon>PROJECTORLOG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PROJECTORLOG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTADD.Designer.vb">
+      <DependentUpon>REPORTADD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTMINOR.Designer.vb">
+      <DependentUpon>REPORTMINOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTMINOR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTMINORADD.Designer.vb">
+      <DependentUpon>REPORTMINORADD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTMINORADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTMINORUPDATE.Designer.vb">
+      <DependentUpon>REPORTMINORUPDATE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTMINORUPDATE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTUPDATE.Designer.vb">
+      <DependentUpon>REPORTUPDATE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTUPDATE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SENDREPORT.Designer.vb">
+      <DependentUpon>SENDREPORT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SENDREPORT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STOCK.Designer.vb">
+      <DependentUpon>STOCK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STOCK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STOCKADD.Designer.vb">
+      <DependentUpon>STOCKADD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STOCKADD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STOCKUPDATE.Designer.vb">
+      <DependentUpon>STOCKUPDATE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STOCKUPDATE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechList.vb" />
+    <Compile Include="USEREQUIPMENT.Designer.vb">
+      <DependentUpon>USEREQUIPMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="USEREQUIPMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USERINVENTORY.Designer.vb">
+      <DependentUpon>USERINVENTORY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="USERINVENTORY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USERMAMA.Designer.vb">
+      <DependentUpon>USERMAMA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="USERMAMA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USERMYREPORT.Designer.vb">
+      <DependentUpon>USERMYREPORT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="USERMYREPORT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USERPARTS.Designer.vb">
+      <DependentUpon>USERPARTS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="USERPARTS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USERPROJECTOR.Designer.vb">
+      <DependentUpon>USERPROJECTOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="USERPROJECTOR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VERIFICATION.Designer.vb">
+      <DependentUpon>VERIFICATION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VERIFICATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ACCOUNTADD.resx">
+      <DependentUpon>ACCOUNTADD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACCOUNTUPDATE.resx">
+      <DependentUpon>ACCOUNTUPDATE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINPROJ.resx">
+      <DependentUpon>ADMINPROJ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINPROJADD.resx">
+      <DependentUpon>ADMINPROJADD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINPROJBORROW.resx">
+      <DependentUpon>ADMINPROJBORROW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINPROJOUT.resx">
+      <DependentUpon>ADMINPROJOUT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHANGEPASSWORD.resx">
+      <DependentUpon>CHANGEPASSWORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUESSHOME.resx">
+      <DependentUpon>GUESSHOME.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUESSINVENTORY.resx">
+      <DependentUpon>GUESSINVENTORY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUESSMAMA.resx">
+      <DependentUpon>GUESSMAMA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUESSPARTS.resx">
+      <DependentUpon>GUESSPARTS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUESSPROJ.resx">
+      <DependentUpon>GUESSPROJ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUESSSTOCK.resx">
+      <DependentUpon>GUESSSTOCK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HELP.resx">
+      <DependentUpon>HELP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HELPSHOW.resx">
+      <DependentUpon>HELPSHOW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HOME.resx">
+      <DependentUpon>HOME.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HOMEUSER.resx">
+      <DependentUpon>HOMEUSER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INVENTORY.resx">
+      <DependentUpon>INVENTORY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INVENTORYADD.resx">
+      <DependentUpon>INVENTORYADD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INVENTORYUPDATE.resx">
+      <DependentUpon>INVENTORYUPDATE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGADD.resx">
+      <DependentUpon>LOGADD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGHISTORY.resx">
+      <DependentUpon>LOGHISTORY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGUPDATE.resx">
+      <DependentUpon>LOGUPDATE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAJORREPORT.resx">
+      <DependentUpon>MAJORREPORT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAJORREPORTSTUB.resx">
+      <DependentUpon>MAJORREPORTSTUB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MANAGEACCOUNT.resx">
+      <DependentUpon>MANAGEACCOUNT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MINORREPORTSTUB.resx">
+      <DependentUpon>MINORREPORTSTUB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PARTS.resx">
+      <DependentUpon>PARTS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PARTSADD.resx">
+      <DependentUpon>PARTSADD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PARTSUPDATE.resx">
+      <DependentUpon>PARTSUPDATE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PROJECTORLOG.resx">
+      <DependentUpon>PROJECTORLOG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTADD.resx">
+      <DependentUpon>REPORTADD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTMINOR.resx">
+      <DependentUpon>REPORTMINOR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTMINORADD.resx">
+      <DependentUpon>REPORTMINORADD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTMINORUPDATE.resx">
+      <DependentUpon>REPORTMINORUPDATE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTUPDATE.resx">
+      <DependentUpon>REPORTUPDATE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SENDREPORT.resx">
+      <DependentUpon>SENDREPORT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STOCK.resx">
+      <DependentUpon>STOCK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STOCKADD.resx">
+      <DependentUpon>STOCKADD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STOCKUPDATE.resx">
+      <DependentUpon>STOCKUPDATE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USEREQUIPMENT.resx">
+      <DependentUpon>USEREQUIPMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USERINVENTORY.resx">
+      <DependentUpon>USERINVENTORY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USERMAMA.resx">
+      <DependentUpon>USERMAMA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USERMYREPORT.resx">
+      <DependentUpon>USERMYREPORT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USERPARTS.resx">
+      <DependentUpon>USERPARTS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USERPROJECTOR.resx">
+      <DependentUpon>USERPROJECTOR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VERIFICATION.resx">
+      <DependentUpon>VERIFICATION.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="TechList - Automated Inventory System_1_TemporaryKey.pfx" />
+    <None Include="TechList - Automated Inventory System_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lgo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="MySql.Data">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

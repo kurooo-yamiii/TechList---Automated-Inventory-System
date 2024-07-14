@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TechList - Automated Inventory System", "TechLissst\TechList - Automated Inventory System.vbproj", "{E8E05C93-8165-4B7B-A9D6-9E9CF0F00B3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8E05C93-8165-4B7B-A9D6-9E9CF0F00B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8E05C93-8165-4B7B-A9D6-9E9CF0F00B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8E05C93-8165-4B7B-A9D6-9E9CF0F00B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8E05C93-8165-4B7B-A9D6-9E9CF0F00B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
